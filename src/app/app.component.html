@@ -1,0 +1,70 @@
+<div class="app-layout">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-icon">S</span>
+      <h2>StoreAdmin</h2>
+    </div>
+
+    <p class="menu-label">MAIN MENU</p>
+
+    <nav>
+      <a routerLink="/dashboard" routerLinkActive="active">
+        <span>▦</span> Dashboard
+      </a>
+
+      <a routerLink="/products" routerLinkActive="active">
+        <span>□</span> Products
+      </a>
+
+      <a routerLink="/orders" routerLinkActive="active">
+        <span>▤</span> Orders
+      </a>
+
+      <a routerLink="/customers" routerLinkActive="active">
+        <span>♙</span> Customers
+      </a>
+    </nav>
+
+    <p class="menu-label">PREFERENCES</p>
+
+    <nav>
+      <a routerLink="/settings" routerLinkActive="active">
+        <span>⚙</span> Settings
+      </a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <div class="profile">
+        <div class="avatar">AM</div>
+        <div>
+          <strong>Admin User</strong>
+          <small>Administrator</small>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <header class="topbar">
+      <div>
+        <h3>Welcome back!</h3>
+        <p>Manage your store from one place.</p>
+      </div>
+
+      <div class="top-actions">
+        <button class="notification">♧</button>
+        <div class="avatar">AM</div>
+      </div>
+    </header>
+
+    <section class="page-content">
+      <router-outlet></router-outlet>
+    </section>
+
+  </main>
+
+</div>
